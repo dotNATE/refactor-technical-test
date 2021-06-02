@@ -17,8 +17,8 @@ function getDaysUntil(futureDate) {
 }
 
 function handleClickEvent() {
-    for (let [dateString, dateObject] of Object.entries(futureDates)) {
-        let daysUntil = getDaysUntil(dateObject)
+    for (let [dateString, futureDate] of Object.entries(futureDates)) {
+        let daysUntil = getDaysUntil(futureDate)
         daysUntilListElement.append("<li>" + daysUntil + " days until " + dateString + " Day</li>")
     }
 }
